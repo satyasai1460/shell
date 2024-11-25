@@ -1,4 +1,5 @@
 #!/bin/bash
+set -x
 read -p "Enter the Number:" NUM1
 
 if [ $(expr $NUM1 % 2) -eq 0 ]; then
