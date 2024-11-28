@@ -29,8 +29,8 @@ for tool in $tools; do
         echo "$tool is already installed"
     else
         echo "Let's install $tool"
-    fi
-    if [ $tool = 'unzip' -o $tool = 'jq' ]; then
-        apt_tools
+        if [ $tool = 'unzip' -o $tool = 'jq' ]; then
+            apt_tools
+        fi
     fi
 done
