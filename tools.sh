@@ -1,7 +1,7 @@
 #!/bin/bash
-tools='terraform packer docker kops'
+tools='terraform packer docker subfinder kops'
 for tool in $tools; do
-    $tool version
+    $tool version >/dev/null 2>1
     if [ $? -eq 0 ]; then
         echo "$tool is already installed"
     else
