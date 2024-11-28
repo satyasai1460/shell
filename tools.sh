@@ -1,5 +1,5 @@
 #!/bin/bash
-tools='terraform packer docker subfinder kops'
+tools='terraform packer docker subfinder kops unzip jq'
 for tool in $tools; do
     $tool version >/dev/null 2>1
     if [ $? -eq 0 ]; then
